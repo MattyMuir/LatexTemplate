@@ -1,0 +1,8 @@
+\ProvidesPackage{preamble_bibliography}
+
+% Import biblatex and register the refs file
+\usepackage{biblatex}
+\addbibresource{refs.bib}
+
+% === Commands ===
+\newcommand{\scite}[1]{\textsuperscript{\cite{#1}}} % Smaller citations

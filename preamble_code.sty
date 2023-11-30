@@ -1,0 +1,10 @@
+\ProvidesPackage{preamble_code}
+
+% Include code in document
+\usepackage{listings}
+\lstset{frame=single} % Add a frame around code snippets
+
+% Wraps lstlistings env in a minipage to stop it breaking across pages
+\lstnewenvironment{codebox}
+    {\minipage{\linewidth}}
+    {\endminipage}

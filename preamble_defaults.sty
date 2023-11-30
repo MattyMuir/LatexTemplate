@@ -1,0 +1,25 @@
+\ProvidesPackage{preamble_defaults}
+
+% === Packages ===
+\usepackage[a4paper, margin=20mm]{geometry} % Customize paper and margins
+\usepackage[british]{babel} % Set document language (correct date format)
+\usepackage{csquotes} % Recommended for use with babel (fix warning)
+\usepackage{amsmath} % Many important mathematical features
+\usepackage{amssymb} % Adds extra maths symbols, including \mathbb
+\usepackage{hyperref} % Create hyperlinks in contents, refs, etc.
+\usepackage{parskip} % Nicer spaces between paragraphs
+\usepackage{tabularray} % Tables https://www.latex-tables.com
+\usepackage{color} % Tables
+
+% Figures
+\usepackage{float} % Better figure placement
+\usepackage{caption} % Customize figure caption width, spacing etc.
+\captionsetup{width=0.7\textwidth} % Set caption width
+
+% Theorems
+\usepackage{amsthm} % Theorem support and the 'proof' environment
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+
+% === Commands ===
+\newcommand{\boldref}[1]{\textbf{\autoref{#1}}} % Bold refs to labels

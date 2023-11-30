@@ -1,0 +1,28 @@
+\ProvidesPackage{preamble_images}
+
+\usepackage{graphicx} % Images
+
+% === Commands ===
+
+% Image command UNLABELLED, parameters are
+% path, width, caption
+\newcommand{\image}[3]
+{
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=#2\textwidth]{#1}
+        \caption{#3}
+    \end{figure}
+}
+
+% Image command LABELLED, parameters are
+% path, label, width, caption
+\newcommand{\limage}[4]
+{
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=#3\textwidth]{#1}
+        \caption{#4}
+        \label{#2}
+    \end{figure}
+}
