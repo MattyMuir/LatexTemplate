@@ -8,3 +8,13 @@
 \lstnewenvironment{codebox}
     {\minipage{\linewidth}}
     {\endminipage}
+
+% Custom pseudocode language
+\lstdefinelanguage{pseudo}
+{
+    morekeywords={Input, Output, while, for, to, if, do, then, end if, end for, end while, return}
+}
+
+% Use
+% \lstset{mathescape=true, escapeinside={@}{@}}
+% Before codeboxes requiring maths / escaping
